@@ -3,6 +3,9 @@
  *
  * A Horse class to define a horses in a barn.
  */
+
+import java.util.ArrayList;
+
 public class Horse
 {
   private String name;
