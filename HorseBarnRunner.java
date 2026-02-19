@@ -10,7 +10,7 @@ public class HorseBarnRunner {
     HorseBarn barn = new HorseBarn();
     ArrayList<Horse> barnSpaces;
     barnSpaces = barn.getSpaces();
-    System.out.println(barnSpaces);
+   // System.out.println(barnSpaces);
 
     for (Horse h : barnSpaces) {
       // CODE TO ADD (error because it attempts to change the size of the Array while
@@ -35,17 +35,24 @@ public class HorseBarnRunner {
     // i--;
     // }
     // }
-    int i = 0;
-    while (i < barnSpaces.size()) {
-      Horse h = barnSpaces.get(i);
+    // int i = 0;
+    // while (i < barnSpaces.size()) {
+    //   Horse h = barnSpaces.get(i);
 
-      if (h.getName().equals("Patches")) {
-        System.out.println("Bye bye " + barnSpaces.remove(i));
-      } else if (h.getName().equals("Lady")) {
-        System.out.println("Bye bye " + barnSpaces.remove(i));
-      } else {
-        i++;
-      }
-    }
+    //   if (h.getName().equals("Patches")) {
+    //     System.out.println("Bye bye " + barnSpaces.remove(i));
+    //   } else if (h.getName().equals("Lady")) {
+    //     System.out.println("Bye bye " + barnSpaces.remove(i));
+    //   } else {
+    //     i++;
+    //   }
+    // }
+
+
+
+
+    //3.2.5
+    
+    
   }
 }
