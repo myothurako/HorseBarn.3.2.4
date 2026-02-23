@@ -26,7 +26,7 @@ public class HorseBarnRunner {
         System.out.println("fatter than average: " + h);
       }
       //lightest check
-      if (h.getWeight() < lightest.getWeight){
+      if (h.getWeight() < lightest.getWeight()){
         lightest = h;
     }
 
@@ -85,7 +85,7 @@ while (i < barnSpaces.size()) {
         System.out.println("fatter than average: " + h);
       }
       //lightest check
-      if (h.getWeight() < lightest.getWeight){
+      if (h.getWeight() < lightest.getWeight()){
         lightest = h;
     }
 
@@ -109,14 +109,15 @@ while (i < barnSpaces.size()) {
     ArrayList<Horse> randomized = RandomPermutation.next(barnSpaces);
 
     // display consecutive pairs
-    for (int i = 0; i < randomized.size(); i += 2) {
-      if (i + 1 < randomized.size()) 
+    for (int j = 0; j < randomized.size(); j += 2) {
+      if (j + 1 < randomized.size()) 
         {
-        System.out.println(randomized.get(i).getName() + " and " + randomized.get(i + 1).getName());
+        System.out.println(randomized.get(j).getName() + " and " + randomized.get(j + 1).getName());
       } 
       else 
       {
-        System.out.println(randomized.get(i).getName() + " has no partner");
+        System.out.println(randomized.get(j).getName() + " has no partner");
       }
     }
+}
 }

@@ -3,6 +3,7 @@
  *
  * Generate random permutations of integers or strings
  */
+import java.util.ArrayList;
 public class RandomPermutation
 {
   /*
